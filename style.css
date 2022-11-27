@@ -1,0 +1,985 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    border-style: none
+}
+body{
+    background-color: #F7F7F7;
+}
+button{
+    cursor: pointer;
+}
+
+.nav_menu_mobile{
+    display: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.header_mobile{
+    display: none;
+}
+.container{
+    margin: 0 35px;
+}
+
+.header .nav_menu{
+    display: flex;
+}
+
+.header .nav_menu .menu_item{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 20px;
+    color: #000000;
+}
+
+.header .number{
+    font-family: 'Montserrat';
+    color: rgba(0, 145, 54, 1);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.lang{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.rus{
+    margin-right: 10px;
+    color: #000000
+}
+
+.kaz{
+    color: #000000
+}
+
+.sleep{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    background:  linear-gradient( 0deg, rgba(0, 158, 59, 0.4) 40%,transparent ), url(/src/img/background_1.jpg);
+    background-size: 100% 100%;
+    height: 660px;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 15px; 
+}
+.sleep_descr{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    color: #FFFFFF;
+    text-align: center;
+}
+h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.btn{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: #007829;
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 157px;
+}
+
+.commercial{
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 100px;
+    padding: 40px 28px 40px 40px;
+    background: #D7F4DC;
+    justify-content: space-between;
+}
+
+.commercial_descr{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 600px;
+    align-items: center;
+}
+
+.commercial_title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 52px;
+    color: #009136;
+    text-align: center;
+}
+.commercial_block_img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-row-gap: 30px;
+    grid-column-gap: 60px;
+}
+.commercial_block_item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.commercial_block_item_img{
+    width: 100%;
+    height: 170px;
+    border-radius: 15px;
+}
+.commercial_block_item_descr{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #232323;
+    margin-top: 20px;
+    text-align: center;
+}
+.commercial_txt{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #232323;
+    text-align: center;
+}
+
+.commercial_btn{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #009E3B;
+    padding: 20px;
+    border-radius: 157px;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 100px;
+    background: #D7F4DC;
+    border-radius: 15px;
+    padding: 0 40px;
+    
+}
+
+.services_descr{
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+.services_img{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+.services_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.serveces_item_descr{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #232323;
+    margin-top: 15px;
+}
+.services_title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 52px;
+    color: #009136;
+    text-align: center;
+}
+
+
+.designer{
+    display: flex;
+    justify-content: space-between;
+    background: #D7F4DC;
+    padding: 40px;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+
+.designer_descr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.designer_title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 52px;
+    color: #009136;
+    text-align: center;
+}
+
+.designer_txt{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #232323;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.designer_btn{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #009E3B;
+    padding: 20px;
+    border-radius: 157px;
+}
+.litle_txt{
+    font-size: 15px;
+}
+.finance{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background: #D7F4DC;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+
+.finance_title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 52px;
+    color: #009136;
+}
+
+.finance_txt{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #232323;
+    margin-top: 30px;
+}
+
+.finance_img_block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 72px;
+    row-gap: 82px;
+    align-items: center;
+}
+.finance_descr{
+    margin-right: 200px;
+}
+.finance_img{
+    width: 40%;
+}
+
+.parhners{
+    background: #D7F4DC;
+    padding: 40px;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+
+.parthners_title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 52px;
+    color: #009136;
+    margin-bottom: 60px;
+}
+
+.parthners_img_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.parthners_img{
+    width: 200px;
+    border-radius:15px;
+}
+.maps{
+    margin-top: 100px;
+    background: #D7F4DC;
+    padding: 40px;
+    border-radius: 15px;
+
+}
+.maps_title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 52px;
+    color: #009136;
+    margin-bottom: 60px;
+}
+.maps_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    width: 50%;
+    height: 450px;
+    border-radius: 15px;
+    border: none;
+    background-size:cover;
+    margin: 0 20px;
+}
+.maps_item_number{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 20px 0;
+}
+.maps_item_1{
+    background: linear-gradient(0deg, rgba(0, 158, 59, 0.6), rgba(0, 158, 59, 0.6)), url(/src/img/map_1.png);
+    background-size: cover;
+    background-position:center;    
+}
+
+.maps_item_2{
+    background: linear-gradient(0deg, rgba(0, 158, 59, 0.6), rgba(0, 158, 59, 0.6)), url(/src/img/map_2.png);
+    background-size: cover;
+    background-position:center;
+}
+
+.maps_item_3{
+    background: linear-gradient(0deg, rgba(0, 158, 59, 0.6), rgba(0, 158, 59, 0.6)), url(/src/img/map_3.png);
+    background-size: cover;
+    background-position:center;
+}
+.maps_item_title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px; 
+    color: #FFFFFF;
+    text-align: center;
+}
+.maps_item_descr{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+.slick-track{
+    display: flex;
+}
+
+.slick-list{
+    overflow: hidden;
+}
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.slick-dots li{
+    margin: 0 10px;
+    border-radius: 10px;
+}
+.slick-dots li button{
+    font-size: 0px;
+    padding: 5px;
+    border-radius: inherit;
+    background:green;
+}
+.slick-dots .slick-active{
+    opacity: 0.5;
+}
+.video{
+    margin-top: 100px;
+    height: 746px;
+}
+
+iframe{
+    border-radius: 15px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.footer_title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 80px;
+    color: #009136;
+}
+
+.footer_descr{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+    opacity: 0.5;
+    margin-top: 60px;
+}
+
+.footer_number{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    color: #009136;
+}
+
+.socnet{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+    opacity: 0.5;
+    margin-top: 60px;
+}
+
+.wake_up{
+    margin-top: 65px;
+    margin-bottom: 75px;
+}
+
+.footer_block_img{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-size: 100% 100%;
+    margin-top: 50px;
+}
+
+.facebook{
+    margin-right: 60px;
+}
+a:hover{
+    color:rgba(0, 145, 54, 1);
+}
+
+.img_inst_fixed{
+    position: fixed;
+    bottom: 30px;
+    left: 15px;
+}
+@media (max-width: 1301px){
+    .commercial_img{
+        width: 50%;
+    }
+
+    .services_img{
+        width: 100%;
+    }
+
+    .designer_img{
+        width: 40%;
+    }
+
+    .finance_img{
+        width: 100%;
+    }
+    .finance_descr{
+        margin-right: 120px;
+    }
+    .parthners_img{
+        width: 130px;
+    }
+}
+@media (max-width: 1283px){
+    .header .nav_menu .menu_item{
+        font-size: 14px;
+    }
+    .lang{
+        font-size: 14px;
+    }
+    .header .number{
+        font-size: 17px;
+    }
+}
+@media (max-width: 1150px){
+    .header .nav_menu .menu_item{
+        font-size: 11px;
+    }
+    .lang{
+        font-size: 11px;
+    }
+    .header .number{
+        font-size: 15px;
+    }
+    .commercial_title{
+        font-size: 42px;
+    }
+    .services_title {
+        font-size: 42px;
+    }
+    .designer_title{
+        font-size: 42px;
+    }
+    .finance_title{
+        font-size: 42px;
+    }
+    .maps_title{
+        font-size: 42px;
+    }
+    .parthners_title{
+        font-size: 42px;
+    }
+    .designer_btn {
+        width: 70%;
+    }
+    .chill{
+        width: 90%;
+    }
+}
+@media (max-width: 1074px){
+    h1{
+        font-size: 39px;
+    }
+    .header .number{
+        font-size: 12px;
+    }
+    .header .nav_menu .menu_item{
+        margin-right: 10px;
+    }
+}
+@media (max-width: 1000px){
+    .commercial{
+        flex-direction: column;
+    }
+    .commercial_btn{
+        width: 100%;
+    }
+    .commercial_img{
+        width: 80%;
+    }
+    .services{
+        flex-direction: column;
+        background:#D7F4DC;
+    }
+    .services_title{
+        margin-bottom: 10px;
+    }
+    .services_txt{
+        margin-bottom: 40px;
+    }
+    .services_img{
+        width: 100%;
+        margin: 20px  auto;
+    }
+    .serveces_item_img{
+        width: 80%;
+    }
+    .designer{
+        flex-direction: column;
+        background:#D7F4DC;
+    }
+
+    .designer_title{
+        margin-bottom: 10px;
+    }
+
+    .designer_txt{
+        margin-bottom: 40px;
+    }
+
+    .designer_btn{
+        margin-bottom: 60px;
+        width: 100%;
+    }
+    .designer_img{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .finance{
+        flex-direction: column;
+    }
+    .finance_descr{
+        margin: 0 auto;
+    }
+    .finance_title{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .finance_txt{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .finance_img{
+        width: 45%;
+    }
+    .finance_img_block{
+        column-gap:0;
+        justify-items:center;
+    }
+    .parthners_title{
+        text-align: center;
+    }
+    .parthners_img_block{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        justify-items: center;
+    }
+    .parthners_img{
+        width: 55%;
+        height: auto;
+    }
+    .footer_title{
+        font-size: 70px;
+    }
+    .commercial{
+        background:#D7F4DC;
+        border-radius: 15px;
+    }
+    .commercial_descr{
+        justify-content: normal;
+        height: auto;   
+    }
+    .commercial_title{
+        margin-bottom: 10px;
+    }
+    .commercial_txt{
+        margin-bottom: 40px;
+    }
+    .commercial_btn{
+        margin-bottom: 20px;
+    }
+    .commercial_block_item_img{
+        height: 110px;
+    }
+    .maps_title{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px){
+    .header{
+        display: none;
+    }
+    .header_mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 35px;
+    }
+    .header_burger span, .header_burger::after, .header_burger:before{
+        height: 2px;
+        background-color: #009136;
+        position: absolute;
+        width: 21px;
+    }
+    .header_burger::after{
+        content:'';
+        top: 29px;
+    }
+    .header_burger:before{
+        content:'';
+        top: 43px;
+    }
+    .nav_menu{
+        display: block;
+        position: relative;
+    }
+    
+    .header_burger.open-menu span{
+        transform: rotate(-40deg);
+        transition: 0.5s;
+        top: 35px;
+    }
+    .header_burger.open-menu:before{
+        opacity: 0;
+        transition: 0.4s;
+    }
+    .header_burger.open-menu:after{
+        transform: rotate(40deg);
+        transition: 0.4s;
+        top: 35px;
+    }
+    .nav_menu_mobile{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        position: absolute;
+        top: -600px;
+        background: #F7F7F7;
+        width: 100%;
+    }
+    .menu_item_mobile{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        color: #000000;
+        margin-top: 40px;
+    }
+    .lang_mobile{
+        margin: 40px 0;
+    }
+    .rus_mobile{
+        margin-right: 40px;
+    }
+    .rus_mobile,.kaz_mobile{
+        font-size: 18px;
+    }
+    .nav_menu_mobile.open-menu{
+        transition: 0.4s;
+        top: 90px;
+    }
+    .sleep{
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items:center;
+        height: 300px;
+    }
+    .sleep_descr{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    .btn{
+        font-size: 18px;
+    }
+    .commercial_title{
+        font-size: 28px;
+    }
+    .commercial_txt{
+        font-size: 18px;
+    }
+    .commercial_btn{
+        font-size: 18px;
+    }
+    .commercial_block_img{
+        grid-column-gap: 20px;
+    }
+    .commercial_block_item_img{
+        height: 110px;
+        width: 100%;
+    }
+    .services_title{
+        font-size: 28px;
+    }
+    .services_txt{
+        font-size: 22px;
+    }
+    .services_img{
+        flex-direction: column;
+        justify-content: normal;
+    }
+    .services_item{
+        margin-bottom: 40px;
+    }
+    .serveces_item_img{
+        width: auto;
+    }
+    .designer_title{
+        font-size: 28px;
+    }
+    .designer_txt{
+        font-size: 18px;
+    }
+    .designer_btn{
+        font-size: 18px;
+    }
+    .finance_title{
+        font-size: 28px;
+    }
+    .finance_txt{
+        font-size: 18px;
+    }
+    .parthners_title{
+        font-size: 28px;
+    }
+    .maps_title{
+        font-size: 28px;
+    }
+    .footer_title{
+        font-size: 26px;
+    }
+    .footer_descr{
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .footer_number{
+        text-align: center;
+        font-size: 30px;
+    }
+    .socnet{
+        font-size: 20px;
+    }
+    .video{
+        height: 300px;
+    }
+    .finance_img,.parthners_img{
+        width: 60%;
+    }
+    
+}
+@media (max-width: 500px){
+    .serveces_item_img{
+        width: 30%;
+    }
+    .commercial_block_item_img{
+        height: 60px;
+    }
+    .commercial_block_item_descr{
+        font-size: 14px;
+    }
+    .maps_item{
+        height: 300px;
+    }
+    .maps_item_title{
+        font-size: 22px;
+    }
+    .maps_item_descr{
+        font-size: 18px;
+    }
+    .finance_img,.parthners_img{
+        width: 80%;
+    }
+}
+@media (max-width: 390px){
+    .commercial_title{
+        font-size: 20px;
+    }
+    .services_title{
+        font-size: 20px;
+    }
+    .designer_title{
+        font-size: 20px;
+    }
+    .parthners_title{
+        font-size: 20px;
+    }
+    .finance_title{
+        font-size: 20px;
+    }
+    .maps_title{
+        font-size: 20px;
+    }
+    .footer_title{
+        font-size: 22px;
+    }
+    .footer_descr{
+        font-size: 18px;
+    }
+    .footer_number{
+        font-size: 25px;
+    }
+    .socnet{
+        font-size: 16px;
+    }
+    .designer_btn{
+        font-size: 10px;
+    }
+    .commercial_btn{
+        font-size: 10px;
+    }
+    .btn{
+        font-size: 10px;
+    }
+    .sleep{
+        height: 250px;
+    }
+    .commercial_txt{
+        font-size: 15px;
+    }
+    .services_txt {
+        font-size: 15px;
+    }
+    .designer_txt{
+        font-size: 15px;
+    }
+    .finance_txt {
+        font-size: 15px;
+    }
+    .video{
+        height: 316px;
+    }
+    .finance_img_block{
+        column-gap:22px;
+        row-gap:32px;
+    }
+    .nav_menu_mobile{
+        width: 107%;
+    }
+}
+@media (max-width: 390px){
+    .sleep_descr{
+        font-size: 15px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .commercial_block_item_img{
+        height: 50px;
+        width: 80%;
+    }
+    .commercial_block_item_descr{
+        font-size: 12px;
+    }
+    .maps_item_title{
+        font-size: 18px;
+    }
+    .maps_item_descr{
+        font-size: 15px;
+    }
+    .maps_item_number{
+        font-size: 18px;
+    }
+}
